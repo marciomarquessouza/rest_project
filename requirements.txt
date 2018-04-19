@@ -1,0 +1,5 @@
+django==2.0.4
+psycopg2-binary==2.7.4
+djangorestframework==3.8.2
+model-mommy==1.5.1
+wheel==0.24.0
