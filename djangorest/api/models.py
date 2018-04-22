@@ -6,7 +6,7 @@ from django.db import models
 class Bucketlist(models.Model):
     """ This class represents the bucketlist model. """
     name = models.CharField(max_length=255, blank=False, unique=True)
-    date_create = models.DateTimeField(auto_now=True)
+    date_created = models.DateTimeField(auto_now=True)
     date_modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
