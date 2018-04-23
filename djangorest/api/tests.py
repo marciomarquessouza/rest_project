@@ -56,7 +56,7 @@ class ViewTestCase(TestCase):
 
     def test_api_can_get_a_bucketlist(self):
         """Test the api can get a given bucketlist."""
-        bucketlist = Bucketlist.objects.get(id=1)
+        bucketlist = Bucketlist.objects.get(name='Go to Ibiza')
         response = self.client.get(
             '/bucketlists/',
             kwargs={'pk': bucketlist.id}, format="json")
